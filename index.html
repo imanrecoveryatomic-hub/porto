@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow Garden — Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#beranda" class="logo">
+      <span class="logo-text">DIMAS ADI <span class="accent">PRATAMA</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#beranda" class="nav-link">Beranda</a>
+      <a href="#tentang" class="nav-link">Tentang Saya</a>
+      <a href="#prestasi" class="nav-link">Prestasi</a>
+      <a href="#pengalaman" class="nav-link">Pengalaman</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="beranda" class="hero">
+    <div class="hero-container">
+      <div class="hero-photo">
+        <div class="avatar-ring">
+          <!--
+            GANTI FOTO PROFIL DI SINI:
+            Hapus <div class="avatar-placeholder">...</div> di bawah ini,
+            lalu ganti dengan:
+            <img src="foto-anda.jpg" alt="Foto Shadow Garden" class="avatar-img">
+          -->
+          <div class="avatar-placeholder" id="avatarPlaceholder">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2.5c-3.3 0-10 1.7-10 5V22h20v-2.5c0-3.3-6.7-5-10-5z" fill="currentColor"/>
+            </svg>
+            <span>Ganti dengan foto Anda</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1 class="hero-name">DIMAS ADI <span class="accent">PRATAMA</span></h1>
+        <p class="hero-role">Web Developer &amp; UI/UX Enthusiast</p>
+        <p class="hero-desc">Saya siswa TJKT yang tertarik di bidang web development, jaringan komputer, dan UI/UX Design.</p>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 4L2 12L8 20M16 4L22 12L16 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div>
+          <p class="stat-value">2+</p>
+          <p class="stat-label">Proyek Selesai</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 6.2L21 9l-5 4.4L17.4 20 12 16.6 6.6 20 8 13.4 3 9l6.4-.8L12 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </span>
+        <div>
+          <p class="stat-value">1</p>
+          <p class="stat-label">Prestasi</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <div>
+          <p class="stat-value">1+</p>
+          <p class="stat-label">Tahun Belajar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TENTANG SAYA ============ -->
+  <section id="tentang" class="about">
+    <div class="about-card">
+      <h2 class="section-title">
+        <span class="title-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2.5c-3.3 0-10 1.7-10 5V22h20v-2.5c0-3.3-6.7-5-10-5z" fill="currentColor"/></svg>
+        </span>
+        Tentang Saya
+      </h2>
+      <p>Saya adalah siswa SMK jurusan Teknik Jaringan Komputer dan Telekomunikasi yang memiliki minat besar di bidang pengembangan web, desain UI/UX, dan jaringan komputer. Saya senang belajar hal baru dan membuat proyek yang bermanfaat.</p>
+    </div>
+  </section>
+
+  <!-- ============ KEAHLIAN SAYA ============ -->
+  <section id="keahlian" class="skills">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="title-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Keahlian Saya
+      </h2>
+      <a href="#keahlian" class="see-all">Lihat Semua →</a>
+    </div>
+
+    <!--
+      GANTI ICON SKILL DI SINI:
+      Setiap kartu sekarang pakai tag <img>. Siapkan file gambar icon (png/svg/jpg),
+      taruh di dalam folder "icons/" (satu folder dengan index.html), lalu sesuaikan
+      nama file pada atribut src di bawah, misalnya icons/html.png, icons/css.png, dst.
+      Ukuran gambar yang disarankan: persegi, minimal 64x64px, background transparan (PNG/SVG).
+    -->
+    <div class="skills-grid">
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/HTML-removebg-preview.png" alt="HTML"></span><p>HTML</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/CSS.png" alt="CSS"></span><p>CSS</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/JS-removebg-preview.png" alt="JavaScript"></span><p>JavaScript</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/PHP.webp" alt="PHP"></span><p>PHP</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/EXCEL-removebg-preview.png" alt="Excel"></span><p>Excel</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/WORD-removebg-preview.png" alt="Word"></span><p>Word</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/NETWORK.png" alt="Networking"></span><p>Networking</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/FIGMA.png" alt="Figma"></span><p>Figma</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/LAN-removebg-preview.png" alt="Crimping LAN"></span><p>Crimping LAN</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/FO-removebg-preview.png" alt="Fiber Optic"></span><p>Fiber Optic</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/VS CODE.webp" alt="VS Code"></span><p>VS Code</p></div>
+      <div class="skill-card"><span class="skill-icon"><img src="ICON/GIT.png" alt="Git &amp; GitHub"></span><p>GitHub</p></div>
+    </div>
+  </section>
+
+  <!-- ============ PROYEK TERBARU ============ -->
+  <section id="proyek" class="projects">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="title-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+        Proyek Terbaru
+      </h2>
+      <!-- Tombol "Lihat Semua" sengaja tidak dibuat sesuai permintaan -->
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Ganti href di bawah dengan link project asli Anda -->
+      <a href="https://betafarmazav2.gt.tc" target="_blank" rel="noopener" class="project-card">
+        <div class="project-thumb thumb-1">Website Apotek Farmaza</div>
+        <div class="project-body">
+          <h3>Website Apotek Farmaza</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span></div>
+          <p>Beta project web apotek farmaza yang menampilkan informasi layanan, produk, dan kontak.</p>
+          <span class="project-link">Lihat Project →</span>
+        </div>
+      </a>
+
+      <a href="https://www.figma.com/design/ESy5ljYiGMOoStjgoy43Es/BLUE?node-id=61-33" target="_blank" rel="noopener" class="project-card">
+        <div class="project-thumb thumb-2">UI/UX – Digifest 2026</div>
+        <div class="project-body">
+          <h3>UI/UX – Digifest 2026</h3>
+          <div class="tags"><span>Figma</span></div>
+          <p>Perancangan UI/UX aplikasi edukasi dengan konsep gamifikasi untuk pembelajaran adaptif berbasis AI.</p>
+          <span class="project-link">Lihat Project →</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/username/personal-portfolio" target="_blank" rel="noopener" class="project-card">
+        <div class="project-thumb thumb-3">Personal Portfolio</div>
+        <div class="project-body">
+          <h3>Personal Portfolio Website</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span></div>
+          <p>Website portofolio pribadi untuk menampilkan proyek dan informasi diri.</p>
+          <span class="project-link">Lihat Project →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============ PENGALAMAN & KEGIATAN ============ -->
+  <section id="pengalaman" class="experience">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="title-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="2"/></svg></span>
+        Pengalaman &amp; Kegiatan
+      </h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Peserta Digifest 2026</h3>
+            <span class="timeline-year">2026</span>
+          </div>
+          <p>Mengikuti kompetisi UI/UX tingkat nasional yang diselenggarakan oleh Digifest.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Proyek Pribadi</h3>
+            <span class="timeline-year">2024 - Sekarang</span>
+          </div>
+          <p>Membuat berbagai proyek website untuk meningkatkan kemampuan pengembangan web.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Praktik Jaringan</h3>
+            <span class="timeline-year">2023 - Sekarang</span>
+          </div>
+          <p>Praktik instalasi jaringan, crimping kabel LAN, dan konfigurasi dasar jaringan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRESTASI ============ -->
+  <section id="prestasi" class="achievements">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="title-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 6.2L21 9l-5 4.4L17.4 20 12 16.6 6.6 20 8 13.4 3 9l6.4-.8L12 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+        Prestasi
+      </h2>
+    </div>
+
+    <div class="achievement-card">
+      <div class="trophy">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 01-10 0V4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M7 5H4a1 1 0 00-1 1v1a4 4 0 004 4M17 5h3a1 1 0 011 1v1a4 4 0 01-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <div>
+        <h3>Juara Digifest 2026</h3>
+        <p class="achievement-cat">Kompetisi UI/UX</p>
+        <p class="achievement-desc">Berhasil meraih juara 3 dalam kompetisi Digifest 2026.</p>
+        <span class="achievement-note">Sertifikat masih dalam proses penerbitan oleh panitia.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAK ============ -->
+
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Shadow Garden. Semua hak dilindungi.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
